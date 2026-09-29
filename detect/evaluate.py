@@ -2,8 +2,8 @@
 
     python -m detect.evaluate [--basic-column sim_basic|sim_basic_all20]
 
-Writes results/table2.{csv,md}, results/table3.{csv,md}, results/fig2_similarity.png and
-results/paper_check.md, which compares every recomputed cell with the published value.
+Writes results/table2.csv, results/table3.csv, results/fig2_similarity.png and
+results/paper_check.csv, which lists every recomputed cell next to its published value.
 
 Averaging follows the paper: Table 2 averages are the plain mean of the per-survey rates;
 Table 3 averages pool all responses of the group.
@@ -16,7 +16,7 @@ from .common import DATA, MODEL_NAMES, MODELS, POST_2022, PRE_2022, RESULTS
 THRESHOLDS = [0.7, 0.75, 0.8, 0.85, 0.9]
 SIG_SURVEYS_PRE = [2, 3, 4]          # survey #1 is excluded from signature-based detection
 
-# Published values (percent), for the comparison in results/paper_check.md.
+# Published values (percent), for the comparison in results/paper_check.csv.
 PAPER_T2 = {
     "gpt-3.5-turbo-0125": [13.91, 1.18, 7.03, 2.50, 48.71, 18.18, 24.76],
     "gpt-4-0613": [56.02, 35.88, 37.70, 39.38, 32.08, 62.12, 66.77],
@@ -87,10 +87,6 @@ def write_tables(t2, t3, counts2, counts3):
         w.writerow(["model"] + head2)
         for m, per in t2.items():
             w.writerow([MODEL_NAMES[m]] + [f"{per[s]:.2f}" for s in s2])
-    md = ["| Model | " + " | ".join(head2) + " |", "|---|" + "--:|" * len(s2)]
-    md += ["| " + MODEL_NAMES[m] + " | " + " | ".join(f"{per[s]:.2f}%" for s in s2) + " |"
-           for m, per in t2.items()]
-    (RESULTS / "table2.md").write_text("\n".join(md) + "\n")
 
     s3 = SIG_SURVEYS_PRE + ["pre"] + POST_2022 + ["post"]
     head3 = [f"#{s} ({counts3[s]})" if s in counts3 else ("Avg. pre-2022" if s == "pre" else "Avg. post-2022")
@@ -100,31 +96,25 @@ def write_tables(t2, t3, counts2, counts3):
         w.writerow(["threshold", "prompt"] + head3)
         for (th, strat), per in t3.items():
             w.writerow([th, strat] + [f"{per[s]:.2f}" for s in s3])
-    md = ["| Threshold | Prompt | " + " | ".join(head3) + " |", "|--:|---|" + "--:|" * len(s3)]
-    md += [f"| {th} | {strat} | " + " | ".join(f"{per[s]:.2f}%" for s in s3) + " |"
-           for (th, strat), per in t3.items()]
-    (RESULTS / "table3.md").write_text("\n".join(md) + "\n")
 
 
 def paper_check(t2, t3):
-    lines = ["# Recomputed values vs. the paper", "",
-             "Cells that differ from the published value by more than 0.01 points.", ""]
-    surveys = PRE_2022 + POST_2022
-    diff2 = [(MODEL_NAMES[m], f"#{s}", PAPER_T2[m][i], t2[m][s])
-             for m in MODELS for i, s in enumerate(surveys) if abs(t2[m][s] - PAPER_T2[m][i]) > 0.011]
-    diff3 = [(th, strat, f"#{s}", PAPER_T3[th][strat][i], t3[(th, strat)][s])
-             for (th, strat) in t3 for i, s in enumerate(SIG_SURVEYS_PRE + POST_2022)
-             if abs(t3[(th, strat)][s] - PAPER_T3[th][strat][i]) > 0.011]
-    lines += [f"## Table 2: {28 - len(diff2)} of 28 cells match", ""]
-    if diff2:
-        lines += ["| Model | Survey | Paper | Recomputed |", "|---|---|--:|--:|"]
-        lines += [f"| {a} | {b} | {c:.2f} | {d:.2f} |" for a, b, c, d in diff2]
-    lines += ["", f"## Table 3: {60 - len(diff3)} of 60 cells match", ""]
-    if diff3:
-        lines += ["| Threshold | Prompt | Survey | Paper | Recomputed |", "|--:|---|---|--:|--:|"]
-        lines += [f"| {a} | {b} | {c} | {d:.2f} | {e:.2f} |" for a, b, c, d, e in diff3]
-    (RESULTS / "paper_check.md").write_text("\n".join(lines) + "\n")
-    return len(diff2), len(diff3)
+    """Every recomputed cell next to its published value; `match` is within 0.01 points."""
+    rows = []
+    for i, s in enumerate(PRE_2022 + POST_2022):
+        for m in MODELS:
+            rows.append(["Table 2", MODEL_NAMES[m], f"#{s}", PAPER_T2[m][i], t2[m][s]])
+    for (th, strat), per in t3.items():
+        for i, s in enumerate(SIG_SURVEYS_PRE + POST_2022):
+            rows.append(["Table 3", f"{strat} @ {th}", f"#{s}", PAPER_T3[th][strat][i], per[s]])
+    with open(RESULTS / "paper_check.csv", "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["table", "row", "survey", "paper", "recomputed", "match"])
+        for t, row, s, paper, got in rows:
+            w.writerow([t, row, s, f"{paper:.2f}", f"{got:.2f}", abs(got - paper) <= 0.011])
+    n2 = sum(r[0] == "Table 2" and abs(r[4] - r[3]) > 0.011 for r in rows)
+    n3 = sum(r[0] == "Table 3" and abs(r[4] - r[3]) > 0.011 for r in rows)
+    return n2, n3
 
 
 def figure2(rows, basic_col):
@@ -163,7 +153,7 @@ def main():
     figure2(sims, args.basic_column)
     d2, d3 = paper_check(t2, t3)
     print(f"Table 2: {28 - d2}/28 cells match the paper; Table 3: {60 - d3}/60. "
-          f"Details in {RESULTS / 'paper_check.md'}")
+          f"Details in {RESULTS / 'paper_check.csv'}")
 
 
 if __name__ == "__main__":

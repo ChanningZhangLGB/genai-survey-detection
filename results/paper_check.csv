@@ -1,0 +1,89 @@
+table,row,survey,paper,recomputed,match
+Table 2,GPT-3.5-Turbo,#1,13.91,13.91,True
+Table 2,GPT-4,#1,56.02,56.02,True
+Table 2,GPT-4o,#1,58.52,58.52,True
+Table 2,GPT-4o-Mini,#1,22.81,22.81,True
+Table 2,GPT-3.5-Turbo,#2,1.18,1.18,True
+Table 2,GPT-4,#2,35.88,35.88,True
+Table 2,GPT-4o,#2,32.94,32.94,True
+Table 2,GPT-4o-Mini,#2,5.88,5.88,True
+Table 2,GPT-3.5-Turbo,#3,7.03,4.47,False
+Table 2,GPT-4,#3,37.70,35.14,False
+Table 2,GPT-4o,#3,37.70,37.70,True
+Table 2,GPT-4o-Mini,#3,4.79,4.79,True
+Table 2,GPT-3.5-Turbo,#4,2.50,2.50,True
+Table 2,GPT-4,#4,39.38,39.38,True
+Table 2,GPT-4o,#4,35.62,35.62,True
+Table 2,GPT-4o-Mini,#4,6.25,6.25,True
+Table 2,GPT-3.5-Turbo,#5,48.71,48.71,True
+Table 2,GPT-4,#5,32.08,32.08,True
+Table 2,GPT-4o,#5,51.74,51.76,False
+Table 2,GPT-4o-Mini,#5,58.58,58.58,True
+Table 2,GPT-3.5-Turbo,#6,18.18,18.18,True
+Table 2,GPT-4,#6,62.12,62.12,True
+Table 2,GPT-4o,#6,49.49,49.49,True
+Table 2,GPT-4o-Mini,#6,28.79,28.79,True
+Table 2,GPT-3.5-Turbo,#7,24.76,20.77,False
+Table 2,GPT-4,#7,66.77,63.65,False
+Table 2,GPT-4o,#7,66.59,66.54,False
+Table 2,GPT-4o-Mini,#7,28.46,28.02,False
+Table 3,basic @ 0.7,#2,15.88,15.88,True
+Table 3,basic @ 0.7,#3,7.35,7.35,True
+Table 3,basic @ 0.7,#4,13.12,13.12,True
+Table 3,basic @ 0.7,#5,6.09,6.09,True
+Table 3,basic @ 0.7,#6,14.65,14.65,True
+Table 3,basic @ 0.7,#7,15.74,15.74,True
+Table 3,sentiment @ 0.7,#2,23.53,23.53,True
+Table 3,sentiment @ 0.7,#3,13.10,13.10,True
+Table 3,sentiment @ 0.7,#4,21.25,21.25,True
+Table 3,sentiment @ 0.7,#5,7.55,7.55,True
+Table 3,sentiment @ 0.7,#6,21.72,21.72,True
+Table 3,sentiment @ 0.7,#7,18.04,18.04,True
+Table 3,basic @ 0.75,#2,8.82,8.82,True
+Table 3,basic @ 0.75,#3,4.47,4.47,True
+Table 3,basic @ 0.75,#4,6.25,6.25,True
+Table 3,basic @ 0.75,#5,3.00,3.00,True
+Table 3,basic @ 0.75,#6,7.58,7.58,True
+Table 3,basic @ 0.75,#7,14.59,14.59,True
+Table 3,sentiment @ 0.75,#2,11.76,11.76,True
+Table 3,sentiment @ 0.75,#3,6.39,6.39,True
+Table 3,sentiment @ 0.75,#4,11.88,11.88,True
+Table 3,sentiment @ 0.75,#5,3.43,3.43,True
+Table 3,sentiment @ 0.75,#6,15.15,15.15,True
+Table 3,sentiment @ 0.75,#7,15.74,15.74,True
+Table 3,basic @ 0.8,#2,1.18,1.18,True
+Table 3,basic @ 0.8,#3,1.92,1.92,True
+Table 3,basic @ 0.8,#4,1.25,1.25,True
+Table 3,basic @ 0.8,#5,2.23,2.23,True
+Table 3,basic @ 0.8,#6,2.53,2.53,True
+Table 3,basic @ 0.8,#7,13.82,13.82,True
+Table 3,sentiment @ 0.8,#2,3.53,3.53,True
+Table 3,sentiment @ 0.8,#3,4.47,4.47,True
+Table 3,sentiment @ 0.8,#4,4.38,4.38,True
+Table 3,sentiment @ 0.8,#5,2.23,2.23,True
+Table 3,sentiment @ 0.8,#6,7.58,7.58,True
+Table 3,sentiment @ 0.8,#7,14.78,14.78,True
+Table 3,basic @ 0.85,#2,0.00,0.00,True
+Table 3,basic @ 0.85,#3,0.64,0.64,True
+Table 3,basic @ 0.85,#4,0.00,0.00,True
+Table 3,basic @ 0.85,#5,1.89,1.89,True
+Table 3,basic @ 0.85,#6,0.00,0.00,True
+Table 3,basic @ 0.85,#7,11.32,11.32,True
+Table 3,sentiment @ 0.85,#2,0.00,0.00,True
+Table 3,sentiment @ 0.85,#3,2.24,2.24,True
+Table 3,sentiment @ 0.85,#4,1.25,1.25,True
+Table 3,sentiment @ 0.85,#5,1.97,1.97,True
+Table 3,sentiment @ 0.85,#6,3.54,3.54,True
+Table 3,sentiment @ 0.85,#7,13.05,13.05,True
+Table 3,basic @ 0.9,#2,0.00,0.00,True
+Table 3,basic @ 0.9,#3,0.32,0.32,True
+Table 3,basic @ 0.9,#4,0.00,0.00,True
+Table 3,basic @ 0.9,#5,1.29,1.29,True
+Table 3,basic @ 0.9,#6,0.00,0.00,True
+Table 3,basic @ 0.9,#7,4.80,4.80,True
+Table 3,sentiment @ 0.9,#2,0.00,0.00,True
+Table 3,sentiment @ 0.9,#3,0.96,0.96,True
+Table 3,sentiment @ 0.9,#4,0.00,0.00,True
+Table 3,sentiment @ 0.9,#5,1.37,1.37,True
+Table 3,sentiment @ 0.9,#6,0.51,0.51,True
+Table 3,sentiment @ 0.9,#7,8.64,8.64,True
