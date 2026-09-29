@@ -1,0 +1,122 @@
+[
+ {
+  "survey": 2,
+  "question_id": "q1",
+  "question": "How comfortable would you feel if your uploaded receipts are transmitted to a third party (e.g., other apps, online platforms, service providers) and accessed by anonymous individuals? Can you please explain your answer to the question above?\\"
+ },
+ {
+  "survey": 2,
+  "question_id": "q2",
+  "question": "How comfortable would you feel if a receipt is transmitted to a third party and accessed by anonymous individuals?\\"
+ },
+ {
+  "survey": 2,
+  "question_id": "q3",
+  "question": "How comfortable would you feel if the following information were present on the receipt and visible to anonymous individuals? Can you explain some of your choices to the above question? If there is any other information on the receipt that you may consider sensitive other than the above mentioned information, please describe them\\"
+ },
+ {
+  "survey": 3,
+  "question_id": "q1",
+  "question": "Do you like to work on receipt transcription tasks? Please explain why or why not.\\"
+ },
+ {
+  "survey": 3,
+  "question_id": "q2",
+  "question": "How comfortable do you feel about working on receipt transcription tasks that contain a \\expnd0\\expndtw0\\kerning0\\outl0\\strokewidth0 \\strokec2 customer\\'92s \\kerning1\\expnd0\\expndtw0 \\outl0\\strokewidth0 sensitive information? Can you please explain your answer to the question above? Please write down at least two high-quality and relevant sentences (You must meet this requirement for us to approve your task submission and payment).\\"
+ },
+ {
+  "survey": 3,
+  "question_id": "q3",
+  "question": "How comfortable do you feel about working on receipt transcription tasks that contain a \\expnd0\\expndtw0\\kerning0\\outl0\\strokewidth0 \\strokec2 vendor\\'92s \\kerning1\\expnd0\\expndtw0 \\outl0\\strokewidth0 sensitive information? Can you please explain your answer to the question above? Please write down at least two high-quality and relevant sentences (You must meet this requirement for us to approve your task submission and payment).\\"
+ },
+ {
+  "survey": 4,
+  "question_id": "q1",
+  "question": "How comfortable would you feel if your uploaded receipts are transmitted to a third party (e.g., other apps, online platforms, service providers) and accessed by anonymous individuals? Can you please explain your answer to the question above?\\"
+ },
+ {
+  "survey": 4,
+  "question_id": "q2",
+  "question": "How comfortable would you feel if a receipt \\outl0\\strokewidth0 \\strokec2 containing your sensitive information\\outl0\\strokewidth0  is transmitted to a third party and accessed by anonymous individuals? Can you please explain your answer to the question above?\\"
+ },
+ {
+  "survey": 4,
+  "question_id": "q3",
+  "question": "How comfortable would you feel if the following information were present on the receipt and visible to anonymous individuals? (Please note that you are the customer) Can you explain some of your choices to the above question? If there is any other information on the receipt that you may consider sensitive other than the above mentioned information, please describe them\\"
+ },
+ {
+  "survey": 5,
+  "question_id": "q1",
+  "question": "When you hear the term “Hydrogen energy“ what questions come to mind? Please list them below"
+ },
+ {
+  "survey": 6,
+  "question_id": "B7",
+  "question": "Based on what I learned so far from the app description, I am concerned with the overall privacy risks associated with installing and using the mobile app. Please explain your answer to Question B.7 with at least 15 words and with high quality."
+ },
+ {
+  "survey": 6,
+  "question_id": "D1",
+  "question": "Please rank the three privacy transparency channels in order of the amount of information they provided about the privacy practices of the [mobile app] (1=the channel with the largest amount of information, 3=the channel with the smallest amount of information) Please explain your answer to Question D.1 with at least 15 words and with high quality (in addition, you can also indicate if some of those channels are tied in this ranking)"
+ },
+ {
+  "survey": 6,
+  "question_id": "D2",
+  "question": "Please rank the three privacy transparency channels in order of the clarity of the information they provided about the privacy practices of the [mobile app] (1=the channel with the best information clarity, 3=the channel with worst information clarity). Please explain your answer to Question D.2 with at least 15 words and with high quality (in addition, you can also indicate if some of those channels are tied in this ranking)"
+ },
+ {
+  "survey": 6,
+  "question_id": "D3",
+  "question": "Please rank the three privacy transparency channels in order of the intuitiveness of their user interfaces in providing the privacy practices of the [mobile app] (1=the most intuitive channel, 3=the least intuitive channel). Please explain your answer to Question D.3 with at least 15 words and with high quality (in addition, you can also indicate if some of those channels are tied in this ranking)"
+ },
+ {
+  "survey": 6,
+  "question_id": "D4",
+  "question": "Please rank the three privacy transparency channels in order of the their overall effectiveness in helping you understand the privacy practices of the [mobile app] and estimate the privacy risks associated with installing and using it (1=the most effective channel, 3=the least effective channel). Please explain your answer to Question D.4 with at least 15 words and with high quality (in addition, you can also indicate if some of those channels are tied in this ranking)"
+ },
+ {
+  "survey": 6,
+  "question_id": "DS_C12",
+  "question": "Based on the privacy practices I learned purely from the Data Safety, I am concerned with the overall privacy risks associated with installing and using the mobile app. Please explain your answer to Question C.12 with at least 15 words and with high quality."
+ },
+ {
+  "survey": 6,
+  "question_id": "DS_C13",
+  "question": "The Data Safety should be improved in some ways to help me better understand the privacy practices of the mobile app and better estimate the privacy risks associated with installing and using the app. Please explain your answer to Question C.13 with at least 15 words and with high quality."
+ },
+ {
+  "survey": 6,
+  "question_id": "PM_C12",
+  "question": "Based on the privacy practices I learned purely from the Permission Manifest, I am concerned with the overall privacy risks associated with installing and using the mobile app. Please explain your answer to Question C.12 with at least 15 words and with high quality."
+ },
+ {
+  "survey": 6,
+  "question_id": "PM_C13",
+  "question": "The Permission Manifest should be improved in some ways to help me better understand the privacy practices of the mobile app and better estimate the privacy risks associated with installing and using the app. Please explain your answer to Question C.13 with at least 15 words and with high quality."
+ },
+ {
+  "survey": 6,
+  "question_id": "PP_C12",
+  "question": "Based on the privacy practices I learned purely from the Privacy Policy, I am concerned with the overall privacy risks associated with installing and using the mobile app. Please explain your answer to Question C.12 with at least 15 words and with high quality."
+ },
+ {
+  "survey": 6,
+  "question_id": "PP_C13",
+  "question": "The Privacy Policy should be improved in some ways to help me better understand the privacy practices of the mobile app and better estimate the privacy risks associated with installing and using the app. Please explain your answer to Question C.13 with at least 15 words and with high quality."
+ },
+ {
+  "survey": 7,
+  "question_id": "q1",
+  "question": "Which aspects of the sentence do you focus on when considering the author of message \\'93\\cf2 Women should be concerned with their duties of childbearing and house tending rather than with desires for professional or business career\\'94\\cf0 ?\\'a0 Can you please explain your answer to the question above? Please write down at least two sentences:\\'a0\\"
+ },
+ {
+  "survey": 7,
+  "question_id": "q2",
+  "question": "Which aspects of the sentence do you focus on when considering the author of message \\'93\\cf2 Women are too emotional and irrational to be successful in the workplace.\\cf0 \\'94? Can you please explain your answer to the question above? Please write down at least two sentences:\\'a0\\"
+ },
+ {
+  "survey": 7,
+  "question_id": "q3",
+  "question": "Protecting internet users against cyberbullying launched by AI is as important as that by humans? Can you please explain your answer to the question above? Please write down at least two sentences.\\'a0\\"
+ }
+]

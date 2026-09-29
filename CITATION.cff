@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "Detecting the Use of Generative AI in Crowdsourced Surveys: Implications for Data Integrity"
+authors:
+  - family-names: Zhang
+    given-names: Dapeng
+  - family-names: Katoh
+    given-names: Marina
+  - family-names: Pei
+    given-names: Weiping
+preferred-citation:
+  type: conference-paper
+  title: "Detecting the Use of Generative AI in Crowdsourced Surveys: Implications for Data Integrity"
+  authors:
+    - family-names: Zhang
+      given-names: Dapeng
+    - family-names: Katoh
+      given-names: Marina
+    - family-names: Pei
+      given-names: Weiping
+  year: 2025
+  collection-title: "CSCW 2025 Workshop: Beyond Information: Online Participatory Culture and Information Disorder"
+  doi: "10.48550/arXiv.2510.24594"
+  url: "https://arxiv.org/abs/2510.24594"

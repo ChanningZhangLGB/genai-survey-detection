@@ -1,0 +1,6 @@
+# Tested with Python 3.11. Rebuilding the results needs only numpy, scipy and matplotlib.
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+openai>=1.40                # detect.zero_shot, detect.signatures
+sentence-transformers>=3.0  # detect.similarity
