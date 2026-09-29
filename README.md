@@ -13,11 +13,9 @@ run between 2021 and 2024, from which every table and figure in the paper can be
 ## How it works
 
 <p align="center">
-  <img src="docs/framework.png" width="760" alt="Overview of LLM-based and signature-based detection">
+  <img src="docs/framework.png" width="760" alt="The framework of GenAI detection in crowdsourced surveys">
   <br>
-  <em>Workers may answer survey tasks with ChatGPT. LLM-based detection asks an LLM whether each
-  collected response is AI-generated; signature-based detection has LLMs answer the survey
-  questions themselves and measures how similar each response is to those signatures.</em>
+  <em>The framework of GenAI detection in crowdsourced surveys.</em>
 </p>
 
 **LLM-based detection** uses the LLM as a *detector*. Each response is shown to a model with the
